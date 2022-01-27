@@ -1,0 +1,425 @@
+:root {
+    --h1: 3.6rem;
+    --h2: 2.4rem;
+    --font-family:'Bebas Neue', cursive;
+    --secondFamily: 'Lato', sans-serif;
+    /* --fontSize-icon: ; */
+    --box-shadow: 20px 20px 60px #36bc69,
+    -20px -20px 60px #4afe8f;
+    --background-BoxShadow:#40dd7c;
+    --text-color: #eeeeee;
+    /* --hover-shadow: ;
+ */
+}
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+html {
+    font-size: 62.5%;
+}
+
+body {
+    background-color: var(--background-BoxShadow);
+    height: 100vh;
+    padding: 0 2rem 0 2rem;
+}
+
+
+/* HEADER SECTION */
+
+.header {
+    display: flex;
+    width: 100%;
+    height: auto;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    padding: 3rem 2rem;
+}
+
+.header h1{
+    font-family: var(--font-family);
+    font-size: var(--h1);
+    font-weight: bold;
+    margin: 1.7rem 0 0 0;
+    color: var(--text-color);
+}
+
+h2 {
+    font-family: var(--secondFamily);
+    font-size: var(--h2);
+    text-align: center;
+    font-style: italic;
+    color: var(--text-color);
+}
+
+.second__h2{
+    margin-top: 6rem;
+}
+
+.header__image--container {
+    width: 150px;
+    height: 150px;
+    border-radius: 50%;
+    box-shadow: var(--box-shadow);
+    background-image: url('../assets/img/JESSE-STORM_ccexpress.png');
+    background-size: contain;
+    background-position: 50% 50%;
+    background-repeat: no-repeat;
+    
+}
+
+.verfication__section{
+    display: flex;
+    width: 350px;
+    height: auto;
+    justify-content: center;
+}
+
+ .image {
+    position: relative;
+    top: 2.5rem;
+    left: 0.8rem;
+    width: 2.6rem;
+    height: 2.6rem;
+}
+
+.image img {
+    width: 100%;
+     height: 100%;
+    object-fit: contain;
+}
+
+
+
+/* BUTTONS SECTION */
+.button__container {
+    width: 100%;
+    height: auto;
+    padding: 0 0 4rem 0;
+}
+
+.button__list{
+    width: 100%;
+    height: auto;
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    grid-template-rows: repeat(2, 300px);
+    list-style: none;
+    justify-content: center;
+    padding: 3rem 0 0 0;
+}
+
+.button__list li {
+    margin: 0 auto;
+    list-style: none;
+}
+
+.button__container{
+    width: 100%;
+    height: auto;
+    padding: 2.5rem 0 0 0;
+    background-color: var(--background-BoxShadow);
+}
+.button {
+    width: 140px;
+    height: 145px;
+    outline: none;
+    border-radius: 50%;
+    border-width: 0;
+    border-style: none;
+    box-shadow: var(--box-shadow);
+    background-color: var(--background-BoxShadow);
+
+}
+
+
+.button-item-second{
+    width: 10rem;
+    height: 10rem;
+    outline: none;
+    background-color: var(--background-BoxShadow);
+    border-radius: 50%;
+    border-width: 0;
+    border-style: none;
+    box-shadow: var(--box-shadow);
+    text-align: center;
+    transition: all 0.1s ease-in;
+}
+
+.button-item-second:hover {
+    background: #40dd7c;
+    box-shadow: inset 20px 20px 60px #36bc69,
+            inset -20px -20px 60px #4afe8f;
+    transform: scale(1.1);
+    transition: all 0.3s ease-in;
+    
+}
+.button a{
+    text-decoration: none;
+    color: white;
+    transition: all 0.1s ease-in;
+}
+
+.button:hover {
+    transform: scale(1.1);
+    background: #40dd7c;
+    box-shadow: inset 20px 20px 60px #36bc69,
+            inset -20px -20px 60px #4afe8f;
+    transition: all 0.3s ease-in;
+}
+
+.fa-instagram, .fa-twitter {
+    font-size: 4rem;
+    
+}
+
+.fa-instagram {
+    color: #1b1b1b;
+    
+}
+
+.fa-twitter{
+    color: #55ACEE;
+}
+.fa-youtube, .fa-spotify, .fa-itunes-note, .fa-soundcloud {
+    font-size: 7rem;
+    color: #eeeeee;
+}
+
+/* SLIDER SECTION */
+
+.swiper {
+    width: 100%;
+    height: auto;
+    background-color: var(--background-BoxShadow);
+    display: flex;
+    justify-content: center;
+    
+  }
+
+  .swiper-slide {
+      width: 120px;
+      height: 300px;
+      padding: 1.5rem 0 6rem 0;
+    background: var(--background-BoxShadow);
+    /* Center slide text vertically */
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: -webkit-flex;
+    display: flex;
+    -webkit-box-pack: center;
+    -ms-flex-pack: center;
+    -webkit-justify-content: center;
+    justify-content: center;
+    -webkit-box-align: center;
+    -ms-flex-align: center;
+    -webkit-align-items: center;
+    align-items: center;
+    object-fit: cover;
+     
+  }
+
+
+  .swiper--item1, .swiper--item2, .swiper--item3, .swiper--item4, .swiper--item5 {
+    background-color: var(--background-BoxShadow);
+      display: flex;
+      justify-content: center;
+    -webkit-box-shadow: 0px 10px 18px -7px rgba(0,0,0,0.75);
+    -moz-box-shadow: 0px 10px 18px -7px rgba(0,0,0,0.75);
+    box-shadow: 0px 10px 18px -7px rgba(0,0,0,0.75);
+    border-radius: 0.5rem;
+    padding: 1rem 0 1rem 0;
+    width: 300px;
+    height: 300px;
+  }
+
+  .swiper-slide a img{
+    position: relative;
+    width: 250px;
+    height: 250px;
+    border-radius: 0.5rem;
+    object-fit: cover;
+    top: 1.4rem;
+
+  }
+
+
+  .swiper-button-next:after, .swiper-button-prev::after{
+      color: #aa43b1;
+  }
+
+
+
+/* FOOTER SECTION */
+.footer {
+    margin: 4rem 0 0 0;
+    width: 100%;
+    height: auto;
+    padding: 1rem 0 4rem 0;
+
+}
+
+.footer ul {
+    list-style: none;
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+}
+
+
+
+/* MEDIA QUERIES*/
+
+@media screen and (min-width: 768px) {
+    .header__image--container{
+        width: 350px;
+        height: 350px;
+    }
+
+    .image img {
+        width: 100%;
+        height: 100%;
+    }
+
+    .header h1{
+        font-size: 6.5rem;
+        margin-top: 3rem;
+        text-align: center;
+
+    }
+
+    h2 {
+        font-size: var(--h1);
+        font-style: italic;
+    }
+    .image{
+        top: 5rem;
+        bottom: 0;
+        left: 2rem;
+        right: 0;
+        width: 3.6rem;
+        height: 3.6rem;
+    }
+
+    .image img {
+        width: 100%;
+        height: 100%;
+    }
+    
+
+    /* BUTTON  */
+    .button {
+        width: 200px;
+        height: 200px;
+    }
+
+    .button__container {
+        width: 100%;
+        justify-content: center;
+
+    }
+    .button__list {
+        margin: 0 auto;
+        display: flex;
+        flex-direction: row;
+        justify-content: space-evenly;
+        align-items: center;
+        width: 100%;
+        padding: 3.5rem 0 0 0;
+    }
+
+    .button__list li {
+        margin: 0;
+    }
+
+    .button-item-second{
+        width: 140px;
+        height: 145px;
+    }
+
+/* SWIPER */
+    .swiper-slide a img{
+        width: 375px;
+        height: 375px;
+        position: relative;
+        top: 3rem;
+        object-fit: cover;
+    }
+    
+    .swiper--item1, .swiper--item2, .swiper--item3, .swiper--item4, .swiper--item5 {
+        width: 450px;
+        height: 450px;
+        border-radius: 0.5rem;
+      }
+    
+}
+
+
+@media screen and (min-width: 1024px) {
+    .header {
+        width: 400px;
+        grid-column: 1 / 2;
+        grid-row: 1 / 2;
+        justify-self: center;
+    }
+    .body {
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+        grid-template-rows: 1fr 1fr;
+    }
+
+    h2 {
+        display: none;
+    }
+    .button{
+        width: 150px;
+        height: 150px;
+    }
+
+    .button__container {
+        grid-column: 1 / 3;
+        grid-row: 2 / 3;
+    }
+
+    .button-item-second {
+        margin: 0 2rem 0 0;
+        width: 150px;
+        height: 150px;
+        justify-self: center;
+    }
+     
+    .swiper-wraper {
+        min-width: 300px;
+        max-width: 350px;
+    }
+    .swiper-slide a img{
+        width: 275px;
+        height: 275px;
+        position: relative;
+        top: 3rem;
+        object-fit: cover;
+    }
+    
+    .swiper--item1, .swiper--item2, .swiper--item3, .swiper--item4, .swiper--item5 {
+        width: 350px;
+        height: 350px;
+        border-radius: 0.5rem;
+      }
+
+      .footer {
+          display: flex;
+          justify-content: center;
+          align-items: center;
+          margin-bottom: 1.2rem; 
+      }
+
+      .fa-instagram, .fa-twitter,  .fa-youtube, .fa-spotify, .fa-itunes-note, .fa-soundcloud, .fa-facebook{
+        font-size: 5rem;
+        color: #eeeeee;
+    }
+}
