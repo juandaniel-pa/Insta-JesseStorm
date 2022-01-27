@@ -27,8 +27,40 @@ body {
     height: 100vh;
     padding: 0 2rem 0 2rem;
 }
+/* ANIMATION */
+#motion-demo {
+    offset-path: path('M20,20 C20,100 200,0 200,100');
+    animation: move 3000ms infinite alternate ease-in-out;
+    width: 40px;
+    height: 40px;
+    background-image: url('../assets/img/mouse-solid.png');
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: contain;
+    position: relative;
+
+  }
+  
+  @keyframes move {
+    0% {
+      offset-distance: 0%;
+    }
+    100% {
+      offset-distance: 100%;
+    }
+  }
 
 
+
+.fa-mouse {
+    position: absolute;
+    z-index: 1;
+    width: 40px;
+    height: 40px;
+    color: #aa43b1;
+    font-size: 4rem;
+
+  }
 /* HEADER SECTION */
 
 .header {
@@ -58,6 +90,8 @@ h2 {
 }
 
 .second__h2{
+    position: relative;
+    z-index: -1;
     margin-top: 6rem;
 }
 
