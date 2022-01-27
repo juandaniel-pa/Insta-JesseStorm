@@ -173,23 +173,12 @@ h2 {
     transition: all 0.3s ease-in;
 }
 
-.fa-instagram, .fa-twitter {
-    font-size: 4rem;
-    
-}
 
-.fa-instagram {
-    color: #1b1b1b;
-    
-}
-
-.fa-twitter{
-    color: #55ACEE;
-}
-.fa-youtube, .fa-spotify, .fa-itunes-note, .fa-soundcloud {
-    font-size: 7rem;
+.fa-youtube, .fa-spotify, .fa-itunes-note, .fa-soundcloud, .fa-youtube, .fa-twitter, .fa-facebook, .fa-instagram {
+    font-size: 5rem;
     color: #eeeeee;
 }
+
 
 /* SLIDER SECTION */
 
@@ -340,6 +329,11 @@ h2 {
     .button-item-second{
         width: 140px;
         height: 145px;
+    }
+
+    .fa-facebook, .fa-instagram, .fa-itunes-note .fa-soundcloud, .fa-spotify, .fa-twitter, .fa-youtube {
+        color: #eeeeee;
+        font-size: 5rem;
     }
 
 /* SWIPER */
