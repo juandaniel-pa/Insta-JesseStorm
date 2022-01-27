@@ -8,6 +8,7 @@
     -20px -20px 60px #4afe8f;
     --background-BoxShadow:#40dd7c;
     --text-color: #eeeeee;
+    --complement-color: #DD40A1;
     /* --hover-shadow: ;
  */
 }
@@ -199,7 +200,11 @@ h2 {
     transition: all 0.1s ease-in;
 }
 
-.button:hover {
+.button .fa-instagram:hover {
+    color: var(--complement-color);
+}
+
+.button:hover{
     transform: scale(1.1);
     background: #40dd7c;
     box-shadow: inset 20px 20px 60px #36bc69,
@@ -208,10 +213,12 @@ h2 {
 }
 
 
+
 .fa-youtube, .fa-spotify, .fa-itunes-note, .fa-soundcloud, .fa-youtube, .fa-twitter, .fa-facebook, .fa-instagram {
     font-size: 5rem;
     color: #eeeeee;
 }
+
 
 
 /* SLIDER SECTION */
@@ -389,6 +396,12 @@ h2 {
 
 
 @media screen and (min-width: 1024px) {
+
+
+    /* EFFECTS */
+    #motion-demo{
+        display: none;
+    }
     .header {
         width: 400px;
         grid-column: 1 / 2;
