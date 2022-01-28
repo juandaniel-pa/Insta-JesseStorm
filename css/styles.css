@@ -4,13 +4,14 @@
     --font-family:'Bebas Neue', cursive;
     --secondFamily: 'Lato', sans-serif;
     /* --fontSize-icon: ; */
-    --box-shadow: 20px 20px 60px #36bc69,
-    -20px -20px 60px #4afe8f;
-    --background-BoxShadow:#40dd7c;
+    --box-shadow: 20px 20px 60px #6809a3,
+    -20px -20px 60px #8c0ddd;
+    --background-BoxShadow:#7A0BC0;
     --text-color: #eeeeee;
-    --complement-color: #DD40A1;
-    /* --hover-shadow: ;
- */
+    --complement-color: #40dd7c;
+    --hover-shadow: inset 20px 20px 60px #6809a3,
+    inset -20px -20px 60px #8c0ddd;
+ 
 }
 
 *{
@@ -28,40 +29,11 @@ body {
     height: 100vh;
     padding: 0 2rem 0 2rem;
 }
-/* ANIMATION */
-#motion-demo {
-    offset-path: path('M20,20 C20,100 200,0 200,100');
-    animation: move 3000ms infinite alternate ease-in-out;
-    width: 40px;
-    height: 40px;
-    background-image: url('../assets/img/mouse-solid.png');
-    background-repeat: no-repeat;
-    background-position: center;
-    background-size: contain;
-    position: relative;
 
-  }
-  
-  @keyframes move {
-    0% {
-      offset-distance: 0%;
-    }
-    100% {
-      offset-distance: 100%;
-    }
-  }
-
-
-
-.fa-mouse {
-    position: absolute;
-    z-index: 1;
-    width: 40px;
-    height: 40px;
-    color: #aa43b1;
-    font-size: 4rem;
-
-  }
+a {
+    text-decoration: none;
+    color: var(--text-color);
+}
 /* HEADER SECTION */
 
 .header {
@@ -91,8 +63,6 @@ h2 {
 }
 
 .second__h2{
-    position: relative;
-    z-index: -1;
     margin-top: 6rem;
 }
 
@@ -115,7 +85,7 @@ h2 {
     justify-content: center;
 }
 
- .image {
+.image {
     position: relative;
     top: 2.5rem;
     left: 0.8rem;
@@ -140,12 +110,14 @@ h2 {
 
 .button__list{
     width: 100%;
-    height: auto;
+    height: 500px;
     display: grid;
     grid-template-columns: repeat(2, 1fr);
-    grid-template-rows: repeat(2, 300px);
+    grid-template-rows: repeat(2, 1fr);
     list-style: none;
     justify-content: center;
+    align-items: center;
+    gap: 1rem;
     padding: 3rem 0 0 0;
 }
 
@@ -187,9 +159,7 @@ h2 {
 }
 
 .button-item-second:hover {
-    background: #40dd7c;
-    box-shadow: inset 20px 20px 60px #36bc69,
-            inset -20px -20px 60px #4afe8f;
+    box-shadow: var(--hover-shadow);
     transform: scale(1.1);
     transition: all 0.3s ease-in;
     
@@ -200,15 +170,9 @@ h2 {
     transition: all 0.1s ease-in;
 }
 
-.button .fa-instagram:hover {
-    color: var(--complement-color);
-}
-
 .button:hover{
     transform: scale(1.1);
-    background: #40dd7c;
-    box-shadow: inset 20px 20px 60px #36bc69,
-            inset -20px -20px 60px #4afe8f;
+    box-shadow: var(--hover-shadow);
     transition: all 0.3s ease-in;
 }
 
@@ -301,6 +265,50 @@ h2 {
     align-items: center;
 }
 
+.footer__company {
+    width: 100%;
+    padding: 4rem 0 0 0;
+    margin: 0 auto;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.footer__h3 {
+    display: flex;
+    justify-content: center;
+    font-family: var(--font-family);
+    font-size: 2rem;
+    color: var(--text-color);
+    position: relative;
+}
+
+.footer__h3:hover {
+    color: var(--complement-color);
+}
+
+.footer__h3:hover p {
+    border: 3px solid var(--complement-color);
+}
+
+.footer_p {
+    border: 3px solid var(--text-color);
+    padding: 0.2rem;
+    border-radius: 50%;
+    font-size: 1.1rem;
+    position: absolute;
+    top: -1rem;
+    right: -3rem;
+}
+
+
+
+
+
+
+
+
+
 
 
 /* MEDIA QUERIES*/
@@ -344,15 +352,15 @@ h2 {
 
     /* BUTTON  */
     .button {
-        width: 200px;
-        height: 200px;
+        width: 140px;
+        height: 140px;
     }
 
     .button__container {
         width: 100%;
         justify-content: center;
-
     }
+
     .button__list {
         margin: 0 auto;
         display: flex;
@@ -396,12 +404,6 @@ h2 {
 
 
 @media screen and (min-width: 1024px) {
-
-
-    /* EFFECTS */
-    #motion-demo{
-        display: none;
-    }
     .header {
         width: 400px;
         grid-column: 1 / 2;
@@ -433,7 +435,11 @@ h2 {
         height: 150px;
         justify-self: center;
     }
-     
+
+    .fa-instagram, .fa-twitter,  .fa-youtube, .fa-spotify, .fa-itunes-note, .fa-soundcloud, .fa-facebook{
+        font-size: 5rem;
+        color: #eeeeee;
+    }
     .swiper-wraper {
         min-width: 300px;
         max-width: 350px;
@@ -453,14 +459,35 @@ h2 {
       }
 
       .footer {
-          display: flex;
-          justify-content: center;
-          align-items: center;
-          margin-bottom: 1.2rem; 
+        margin: 0;
+        padding: 0;
+        display: flex;
+        justify-content: center;
+        align-items: center;
       }
 
-      .fa-instagram, .fa-twitter,  .fa-youtube, .fa-spotify, .fa-itunes-note, .fa-soundcloud, .fa-facebook{
-        font-size: 5rem;
-        color: #eeeeee;
+      .footer ul {
+          padding: 7rem 0 0 0;
+      }
+
+      .footer__h3 {
+        font-size: 4rem;
+        color: var(--text-color);
+        position: relative;
     }
+    
+    .footer_p {
+        padding: 0.5rem;
+        border-radius: 50%;
+        font-size: 1rem;
+        position: absolute;
+        top: -1rem;
+        right: -3rem;
+    }
+    
+    .footer__company{
+        grid-column: 1 / 3;
+        padding: 0 0 4rem 0;
+    }
+
 }
