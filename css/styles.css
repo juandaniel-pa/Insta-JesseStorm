@@ -244,7 +244,8 @@ h2 {
 
 
   .swiper-button-next:after, .swiper-button-prev::after{
-      color: #aa43b1;
+      display: none;
+      color: var(--complement-color);
   }
 
 
