@@ -133,8 +133,8 @@ h2 {
     background-color: var(--background-BoxShadow);
 }
 .button {
-    width: 140px;
-    height: 145px;
+    width: 130px;
+    height: 130px;
     outline: none;
     border-radius: 50%;
     border-width: 0;
@@ -146,8 +146,8 @@ h2 {
 
 
 .button-item-second{
-    width: 10rem;
-    height: 10rem;
+    width: 100px;
+    height: 100px;
     outline: none;
     background-color: var(--background-BoxShadow);
     border-radius: 50%;
@@ -354,8 +354,8 @@ h2 {
 
     /* BUTTON  */
     .button {
-        width: 140px;
-        height: 140px;
+        width: 130px;
+        height: 130px;
     }
 
     .button__container {
@@ -378,8 +378,8 @@ h2 {
     }
 
     .button-item-second{
-        width: 140px;
-        height: 145px;
+        width: 130px;
+        height: 130px;
     }
 
     .fa-facebook, .fa-instagram, .fa-itunes-note .fa-soundcloud, .fa-spotify, .fa-twitter, .fa-youtube {
@@ -422,8 +422,8 @@ h2 {
         display: none;
     }
     .button{
-        width: 150px;
-        height: 150px;
+        width: 130px;
+        height: 130px;
     }
 
     .button__container {
@@ -433,8 +433,8 @@ h2 {
 
     .button-item-second {
         margin: 0 2rem 0 0;
-        width: 150px;
-        height: 150px;
+        width: 130px;
+        height: 130px;
         justify-self: center;
     }
 
@@ -476,7 +476,7 @@ h2 {
         font-size: 4rem;
         color: var(--text-color);
         position: relative;
-    }
+        }
     
     .footer_p {
         padding: 0.5rem;
