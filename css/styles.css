@@ -439,6 +439,17 @@ h2 {
         width: 130px;
         height: 130px;
     }
+    .button__list {
+        width: 90%;
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: space-between;
+        height: 200px;
+    }
+
+    .button__list li {
+        margin: 0 2rem 0 0;
+    }
 
     .button__container {
         grid-column: 1 / 3;
@@ -503,7 +514,7 @@ h2 {
     
     .footer__company{
         grid-column: 1 / 3;
-        padding: 0 0 4rem 0;
+        padding: 5.5rem 0 0 0;
     }
 
 }
